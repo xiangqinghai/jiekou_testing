@@ -1,0 +1,69 @@
+{
+  "uid" : "f899b766a5150da",
+  "name" : "test_add_contract",
+  "fullName" : "testcases.Contract_related_test.Test_Contract#test_add_contract",
+  "historyId" : "32dfe644a17e31e6d62449e3ac6eab1c",
+  "time" : {
+    "start" : 1638448543626,
+    "stop" : 1638448543651,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638448543530,
+      "stop" : 1638448543531,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Contract"
+  }, {
+    "name" : "suite",
+    "value" : "Contract_related_test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "126588-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Contract_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f899b766a5150da.json",
+  "parameterValues" : [ ]
+}

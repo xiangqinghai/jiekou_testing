@@ -1,0 +1,71 @@
+{
+  "uid" : "379cb62b217387d7",
+  "name" : "test_add_contract",
+  "fullName" : "testcases.Contract_related_test.Test_Contract#test_add_contract",
+  "historyId" : "32dfe644a17e31e6d62449e3ac6eab1c",
+  "time" : {
+    "start" : 1638501832135,
+    "stop" : 1638501832137,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: not enough values to unpack (expected 4, got 1)",
+  "statusTrace" : "self = <testcases.Contract_related_test.Test_Contract object at 0x000002B0C925E438>\n\n    def test_add_contract(self):\n        token = yamlUtil().read_relation_yaml()\n        # code = \"gdshfdsh\"\n        # name = \"hshkdgg\"\n        code = ''.join(random.sample('zyxwvutsrqponmlkjihgfedcba',10))\n        name = ''.join(random.sample('zyxwvutsrqponmlkjihgfedcba',10))\n        type = random.randint(1, 2)\n        # createTime = datetime.datetime.now().strftime(\"%Y-%m-%d %X\")\n        # file_path1 = open(\"E:/HydProductTest/auttest/jiekou/File_upload/enclosure_pdf/1.pdf\", \"rb\")\n        # file_path2 = open(\"E:/HydProductTest/auttest/jiekou/File_upload/picture/1.jpg\", \"rb\")\n    \n        data = {\n                \"code\": code,\n                \"companyId\": 2,\n                \"createTime\": \"\",\n                \"id\": 0,\n                \"images\": \"\",\n                \"imagesList\": [\"../File_upload/1.jpg\"],\n                \"name\": name,\n                \"pdfs\": \"\",\n                \"pdfsList\": [\"../File_upload/1.pdf\"],\n                \"type\": type\n                }\n        url = 'http://172.16.11.40:4452/api/contractAdd'\n>       response = requests.request(\"POST\", url=url, headers=token, files=data)\n\nContract_related_test.py:88: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nC:\\Python\\lib\\site-packages\\requests\\api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\nC:\\Python\\lib\\site-packages\\requests\\sessions.py:516: in request\n    prep = self.prepare_request(req)\nC:\\Python\\lib\\site-packages\\requests\\sessions.py:459: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\nC:\\Python\\lib\\site-packages\\requests\\models.py:317: in prepare\n    self.prepare_body(data, files, json)\nC:\\Python\\lib\\site-packages\\requests\\models.py:505: in prepare_body\n    (body, content_type) = self._encode_files(files, data)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nfiles = [('code', 'whpnibtmjx'), ('images', ''), ('type', 2), ('imagesList', ['../File_upload/1.jpg']), ('id', 0), ('pdfsList', ['../File_upload/1.pdf']), ...]\ndata = {}\n\n    @staticmethod\n    def _encode_files(files, data):\n        \"\"\"Build the body for a multipart/form-data request.\n    \n        Will successfully encode files when passed as a dict or a list of\n        tuples. Order is retained if data is a list of tuples but arbitrary\n        if parameters are supplied as a dict.\n        The tuples may be 2-tuples (filename, fileobj), 3-tuples (filename, fileobj, contentype)\n        or 4-tuples (filename, fileobj, contentype, custom_headers).\n        \"\"\"\n        if (not files):\n            raise ValueError(\"Files must be provided.\")\n        elif isinstance(data, basestring):\n            raise ValueError(\"Data must not be a string.\")\n    \n        new_fields = []\n        fields = to_key_val_list(data or {})\n        files = to_key_val_list(files or {})\n    \n        for field, val in fields:\n            if isinstance(val, basestring) or not hasattr(val, '__iter__'):\n                val = [val]\n            for v in val:\n                if v is not None:\n                    # Don't call str() on bytestrings: in Py3 it all goes wrong.\n                    if not isinstance(v, bytes):\n                        v = str(v)\n    \n                    new_fields.append(\n                        (field.decode('utf-8') if isinstance(field, bytes) else field,\n                         v.encode('utf-8') if isinstance(v, str) else v))\n    \n        for (k, v) in files:\n            # support for explicit filename\n            ft = None\n            fh = None\n            if isinstance(v, (tuple, list)):\n                if len(v) == 2:\n                    fn, fp = v\n                elif len(v) == 3:\n                    fn, fp, ft = v\n                else:\n>                   fn, fp, ft, fh = v\nE                   ValueError: not enough values to unpack (expected 4, got 1)\n\nC:\\Python\\lib\\site-packages\\requests\\models.py:151: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638501831930,
+      "stop" : 1638501831930,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Contract"
+  }, {
+    "name" : "suite",
+    "value" : "Contract_related_test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "177824-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Contract_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "379cb62b217387d7.json",
+  "parameterValues" : [ ]
+}

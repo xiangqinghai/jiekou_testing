@@ -1,0 +1,74 @@
+{
+  "uid" : "268836bcdd2d80eb",
+  "name" : "test_query_message[caseinfo0]",
+  "fullName" : "testcases.Login_related_test.TestSendR#test_query_message",
+  "historyId" : "6e947f3342c208d2fcb5db974a8ce910",
+  "time" : {
+    "start" : 1638451427811,
+    "stop" : 1638451427830,
+    "duration" : 19
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'str' object has no attribute 'text'",
+  "statusTrace" : "self = <testcases.Login_related_test.TestSendR object at 0x000001FA2AC10E10>\ncaseinfo = {'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}\n\n    @pytest.mark.parametrize(\"caseinfo\",yamlUtil().read_testcase_yaml(\"login_relate.yml\"))\n    def test_query_message(self,caseinfo):\n        method = caseinfo[\"method\"]\n        url = caseinfo[\"url\"]\n        # 从yaml文件读取token值\n        token = yamlUtil().read_relation_yaml()\n        # 调用公共类方法RequestsUtil().send_request（）\n        rep = RequestsUtil().send_request_nodata(method, url, headers=token)\n        # rep = requests.request(methon, url=url, headers=token)\n>       assert \"state\" in rep.text\nE       AttributeError: 'str' object has no attribute 'text'\n\nLogin_related_test.py:37: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638451427668,
+      "stop" : 1638451427669,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "subSuite",
+    "value" : "TestSendR"
+  }, {
+    "name" : "suite",
+    "value" : "Login_related_test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "128588-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Login_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'url': 'http://172.16.11.40:8082/app/newMessage', 'method': 'get'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "268836bcdd2d80eb.json",
+  "parameterValues" : [ "{'url': 'http://172.16.11.40:8082/app/newMessage', 'method': 'get'}" ]
+}

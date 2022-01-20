@@ -1,0 +1,72 @@
+{
+  "uid" : "4bdc273eb19a1618",
+  "name" : "test_query_message[caseinfo0]",
+  "fullName" : "testcases.Login_related_test.TestSendR#test_query_message",
+  "historyId" : "6e947f3342c208d2fcb5db974a8ce910",
+  "time" : {
+    "start" : 1638518278009,
+    "stop" : 1638518278026,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638518277725,
+      "stop" : 1638518277726,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "subSuite",
+    "value" : "TestSendR"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "Login_related_test"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "133428-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Login_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4bdc273eb19a1618.json",
+  "parameterValues" : [ "{'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}" ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "469429f6d1275e06",
+  "name" : "test_query_message[caseinfo0]",
+  "fullName" : "testcases.Login_related_test.TestSendR#test_query_message",
+  "historyId" : "6e947f3342c208d2fcb5db974a8ce910",
+  "time" : {
+    "start" : 1638449109627,
+    "stop" : 1638449109627,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'methon'",
+  "statusTrace" : "self = <testcases.Login_related_test.TestSendR object at 0x00000144F581A588>\ncaseinfo = {'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}\n\n    @pytest.mark.parametrize(\"caseinfo\",yamlUtil().read_testcase_yaml(\"login_relate.yml\"))\n    def test_query_message(self,caseinfo):\n        # print(caseinfo[\"name\"])\n        # print(caseinfo)\n        # print(caseinfo[\"url\"])\n>       methon = caseinfo[\"methon\"]\nE       KeyError: 'methon'\n\nLogin_related_test.py:32: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638449109541,
+      "stop" : 1638449109542,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "subSuite",
+    "value" : "TestSendR"
+  }, {
+    "name" : "suite",
+    "value" : "Login_related_test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "141924-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Login_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "469429f6d1275e06.json",
+  "parameterValues" : [ "{'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}" ]
+}

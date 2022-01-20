@@ -1,0 +1,490 @@
+{
+  "uid" : "4df1eae2ac50694b",
+  "name" : "test_query_message[caseinfo0]",
+  "fullName" : "testcases.Login_related_test.TestSendR#test_query_message",
+  "historyId" : "6e947f3342c208d2fcb5db974a8ce910",
+  "time" : {
+    "start" : 1638522766555,
+    "stop" : 1638522766564,
+    "duration" : 9
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638522766448,
+      "stop" : 1638522766449,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "Login_related_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSendR"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "30488-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Login_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5e0f2ec404aa5ae2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638522711440,
+        "stop" : 1638522711449,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "14b5cf6fc93b5ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638522682372,
+        "stop" : 1638522682387,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "3dba1a8b8adbd3f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638522391047,
+        "stop" : 1638522391058,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "1c7388cdb3d2a50e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638521647384,
+        "stop" : 1638521647392,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "de0569f56d1a4ce6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638520988887,
+        "stop" : 1638520988894,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "409b918967fd96a8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638520957197,
+        "stop" : 1638520957210,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "b18a8f6727b4bbf6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638520867330,
+        "stop" : 1638520867339,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "8d30e3659e1d741f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638520831702,
+        "stop" : 1638520831719,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "44d059a6a56ee779",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638520443213,
+        "stop" : 1638520443222,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "4523193992b5378c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638520131449,
+        "stop" : 1638520131460,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "b7735757ce642daf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638519630928,
+        "stop" : 1638519630936,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "284e25e06258f0d1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638519578616,
+        "stop" : 1638519578625,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "63122450d801329e",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'str' object has no attribute 'items'",
+      "time" : {
+        "start" : 1638519559070,
+        "stop" : 1638519559071,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "74e31840246d5285",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'str' object has no attribute 'items'",
+      "time" : {
+        "start" : 1638519447448,
+        "stop" : 1638519447449,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cedddbb62b7e416e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638519060960,
+        "stop" : 1638519060968,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "c21dc31706b05c9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518927072,
+        "stop" : 1638518927086,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "255c434bd743e76f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518708593,
+        "stop" : 1638518708602,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "48089cf427d4d6a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518468960,
+        "stop" : 1638518468969,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "32b9967fe6b78a1f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518415717,
+        "stop" : 1638518415732,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "4bdc273eb19a1618",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518278009,
+        "stop" : 1638518278026,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "7b1054905f60ec99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518260701,
+        "stop" : 1638518260710,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "425164490f753140",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518199848,
+        "stop" : 1638518199858,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "daae09d19bee3eed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638518157583,
+        "stop" : 1638518157596,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "582bb6ef02b3a5e1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638516883664,
+        "stop" : 1638516883680,
+        "duration" : 16
+      }
+    }, {
+      "uid" : "32eb0c3aae169abe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638516742602,
+        "stop" : 1638516742620,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "bbd5f80ec111adb3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638516625644,
+        "stop" : 1638516625653,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "249bfb83e3d7836b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638502258516,
+        "stop" : 1638502258533,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "4c42a83f6dabb1ee",
+      "status" : "broken",
+      "statusDetails" : "TypeError: send_request() missing 1 required positional argument: 'data'",
+      "time" : {
+        "start" : 1638502203731,
+        "stop" : 1638502203732,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1aa6f59cf4774165",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() takes 2 positional arguments but 3 were given",
+      "time" : {
+        "start" : 1638502074379,
+        "stop" : 1638502074379,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5ffd3a6a0478fdaa",
+      "status" : "broken",
+      "statusDetails" : "TypeError: request() takes 2 positional arguments but 3 were given",
+      "time" : {
+        "start" : 1638502018047,
+        "stop" : 1638502018048,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fb837c386f4554ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638501962282,
+        "stop" : 1638501962295,
+        "duration" : 13
+      }
+    }, {
+      "uid" : "5fe42c63bdf6acb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638501832326,
+        "stop" : 1638501832335,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "f5233dee1f24ef24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638451780118,
+        "stop" : 1638451780140,
+        "duration" : 22
+      }
+    }, {
+      "uid" : "167bd61222eb0cda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638451667848,
+        "stop" : 1638451667871,
+        "duration" : 23
+      }
+    }, {
+      "uid" : "eca1919bb5028196",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638451545791,
+        "stop" : 1638451545806,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "a6d695cfb594c981",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'dict' object has no attribute 'text'",
+      "time" : {
+        "start" : 1638451509954,
+        "stop" : 1638451509965,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "268836bcdd2d80eb",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'str' object has no attribute 'text'",
+      "time" : {
+        "start" : 1638451427811,
+        "stop" : 1638451427830,
+        "duration" : 19
+      }
+    }, {
+      "uid" : "32b4711f3282dd4b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: send_request() missing 1 required positional argument: 'data'",
+      "time" : {
+        "start" : 1638451294590,
+        "stop" : 1638451294590,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "8c91d94479d8f33b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638449788728,
+        "stop" : 1638449788747,
+        "duration" : 19
+      }
+    }, {
+      "uid" : "c35fdb89f541daa6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638449724433,
+        "stop" : 1638449724448,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "32d66ceb56609692",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638449266442,
+        "stop" : 1638449266454,
+        "duration" : 12
+      }
+    }, {
+      "uid" : "5ab60c006173df06",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'methon'",
+      "time" : {
+        "start" : 1638449140678,
+        "stop" : 1638449140678,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "469429f6d1275e06",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'methon'",
+      "time" : {
+        "start" : 1638449109627,
+        "stop" : 1638449109627,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eec3a6612a8c8a9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638449044535,
+        "stop" : 1638449044544,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "fc61c7eb97002a7f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: string indices must be integers",
+      "time" : {
+        "start" : 1638448596781,
+        "stop" : 1638448596781,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "43ba91e5648b649",
+      "status" : "broken",
+      "statusDetails" : "TypeError: string indices must be integers",
+      "time" : {
+        "start" : 1638448581182,
+        "stop" : 1638448581183,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "73f776efca2b840b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: string indices must be integers",
+      "time" : {
+        "start" : 1638448543654,
+        "stop" : 1638448543655,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed728e7b7faa54cc",
+      "status" : "broken",
+      "statusDetails" : "TypeError: string indices must be integers",
+      "time" : {
+        "start" : 1638448521477,
+        "stop" : 1638448521477,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "9d24fb0f610a5eea",
+      "status" : "broken",
+      "statusDetails" : "TypeError: string indices must be integers",
+      "time" : {
+        "start" : 1638448309914,
+        "stop" : 1638448309914,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a7271fa6c4f181f5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: string indices must be integers",
+      "time" : {
+        "start" : 1638448101904,
+        "stop" : 1638448101904,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4df1eae2ac50694b.json",
+  "parameterValues" : [ "{'method': 'get', 'url': 'http://172.16.11.40:8082/app/newMessage'}" ]
+}

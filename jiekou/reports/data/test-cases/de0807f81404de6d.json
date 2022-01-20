@@ -1,0 +1,71 @@
+{
+  "uid" : "de0807f81404de6d",
+  "name" : "test_file_upload",
+  "fullName" : "testcases.Contract_related_test.Test_Contract#test_file_upload",
+  "historyId" : "fc5ebc3a8197e62283e84d3b051581b2",
+  "time" : {
+    "start" : 1638518260521,
+    "stop" : 1638518260533,
+    "duration" : 12
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'method' object is not subscriptable",
+  "statusTrace" : "self = <testcases.Contract_related_test.Test_Contract object at 0x000002B119D0BCC0>\n\n    def test_file_upload(self):\n        url = \"http://172.16.11.40:8082//file/upload\"\n        token = yamlUtil().read_relation_yaml()\n        data = {\"file\": open(r\"E:\\HydProductTest\\auttest\\jiekou\\File_upload\\1.jpg\", \"rb\")}\n        rep = requests.request(\"POST\", url, headers=token, files=data)\n        print(rep.text)\n>       print(rep.json[\"data\"])\nE       TypeError: 'method' object is not subscriptable\n\nContract_related_test.py:69: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1638518260434,
+      "stop" : 1638518260435,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "Contract_related_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Contract"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-BQ40Q36"
+  }, {
+    "name" : "thread",
+    "value" : "209952-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.Contract_related_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de0807f81404de6d.json",
+  "parameterValues" : [ ]
+}
